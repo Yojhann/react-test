@@ -1,5 +1,8 @@
 @Library('devops@feature') _
-pipelineGeneral()
 
+def params = [
+    scmUrl: 'https://github.com/Yojhann/devops.git'
+]
 
-//Prueba Trigger
+pipelineGeneral(params)
+
